@@ -5,24 +5,32 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display:block
 }
 .main_img{
     position: absolute;
     width: 70%;
     height: 600px;
 }
-header {
+header,.head-sun {
     width: 100%;
-    height: 100vh;
-    background: url('https://images01.nicepage.io/a1389d7bc73adea1e1c1fb7e/335bc12dcce55b76af124ec3/59f86e9a43e6f89908a4f0b948915bef.png');
+    height: 100%;
+    background-image: url('https://images01.nicepage.io/a1389d7bc73adea1e1c1fb7e/335bc12dcce55b76af124ec3/59f86e9a43e6f89908a4f0b948915bef.png');
     background-size: cover;
-    background-position: center center; 
+    background-position:center center; 
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     flex-direction: column;
     background-color:rgb(8, 8, 50);
+    background-repeat: no-repeat;
+}
+.head-sun{
+    background-image: url('https://scientificrussia.ru/images/y/q6y-full.jpg');
+    background-repeat: no-repeat;
 }
 main{
     width: 100%;
@@ -46,6 +54,8 @@ main{
 .planet{
     border: white solid 1px;
     height: auto 300px;
+    transition-property: transform;
+    transition-duration: 500ms;
 }
 .row{
     width: 80vw;
@@ -55,7 +65,16 @@ main{
     justify-content: space-between;
     margin-top: 2em;
 }
-
+.img,.img-sun{
+    width: 700px;
+    height: 700px;
+    transition-property: transform;
+    transition-duration: 2s;
+    transform:translateX(0);
+}
+.img:hover{
+    transform: translatex(300px); 
+}
 footer{
     background-color: black;
     color: white;
@@ -71,7 +90,7 @@ a{
 }
 .planet:hover{
     transform: scale(1.01);
-    border: solid 1px green;
+    border: solid 1px green;  
 }
 .btn{
     border-radius: 10px;
@@ -84,4 +103,53 @@ a{
 .asteroid{
     border: solid brown 2px;
     border-radius: 10px;
+}
+.sun{
+    color: yellow;
+}
+.img-sun{
+    width: max-content;
+}
+.txt-img,.txt-img-right{
+    float: left;
+    margin:5px 5px 5px 0px;
+    width: 40%;
+    height: auto;
+}
+.txt-img-right{
+    float: right;
+}
+.txt{
+    animation: 2s linear 1 forwards forward;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+@keyframes forward {
+  0% {
+    transform: translatex(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+@media(max-width:500px){
+    .planet{
+        width: 300px;
+        font-size: small;
+    }
+    .img,.img-sun{
+        width: 100px;
+        height: 100px;
+    }
+    header{
+        width: fit-content;
+    }
+    body{
+        width: fit-content;
+    }
+    .img:hover{
+        transform: translateX(100px);
+    }
 }
