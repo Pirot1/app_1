@@ -14,7 +14,7 @@ body {
     width: 70%;
     height: 600px;
 }
-header,.head-sun {
+header,.head-sun,.head-mercury,.head-venus,.head-earth {
     width: 100%;
     height: 100%;
     background-image: url('https://images01.nicepage.io/a1389d7bc73adea1e1c1fb7e/335bc12dcce55b76af124ec3/59f86e9a43e6f89908a4f0b948915bef.png');
@@ -31,6 +31,54 @@ header,.head-sun {
 .head-sun{
     background-image: url('https://scientificrussia.ru/images/y/q6y-full.jpg');
     background-repeat: no-repeat;
+}
+.head-mercury{
+    background-image: url('https://cdni-vm.servicecdn.ru/2022.12/original/1200_63ad51b582682c1ec1b8aa0b.jpg');
+    background-repeat: no-repeat;
+}
+.head-venus{
+    background-image: url('https://universemagazine.com/wp-content/uploads/2023/10/photo_2023-10-18_15-59-58.jpg');
+    background-repeat: no-repeat;
+}
+.head-earth{
+    background-image:url('https://s0.rbk.ru/v6_top_pics/media/img/4/31/756778395635314.webp');
+    background-repeat: no-repeat;
+}
+.head-mars{
+    background-image:url('https://cdn.am.sputniknews.ru/img/07e8/01/0b/71051472_299:69:1307:636_1920x0_80_0_0_18aab5df7a953d68152704c0ea6ee243.jpg');
+    background-repeat: no-repeat;
+}
+.head-asteroid{
+    background-image:url('https://naked-science.ru/wp-content/uploads/2019/12/kuiper-belt-eso_1024.jpg');
+    background-repeat: no-repeat;
+}
+.head-ceres{
+    background-image:url('https://img.ixbt.site/live/topics/preview/00/05/20/51/1ce03567cb.jpg');
+    background-repeat: no-repeat;
+}
+.head-jupiter{
+    background-image:url('https://universemagazine.com/wp-content/uploads/2023/10/photo_2023-10-26_22-32-59.jpg');
+    background-repeat: no-repeat;
+}
+.head-saturn{
+    background-image:url('https://www.ixbt.com/img/n1/news/2023/6/5/ixbtmedia_Saturn_may_have_failed_as_a_gas_giant_and_Jupiter_40051084-0d81-46ef-85a5-dc63d998875c_large.png');
+    background-repeat: no-repeat;
+}
+.head-uranus{
+    background-image:url('https://maxpolyakov.com/wp-content/uploads/2023/10/the-coldest-planet-in-the-solar-system.jpg');
+    background-repeat: no-repeat;   
+}
+.head-neptune{
+    background-image:url('https://cdn1.relax-fm.ru/proxy/vardata/modules/news/files/1/145/news_file_145_5c4eab38adc82.jpg?w=1020&h=680&t=1548659512');
+    background-repeat: no-repeat;       
+}
+.head-outersolarsystem{
+    background-image:url('https://starwalk.space/gallery/images/kuiper-belt/1920x1080.jpg');
+    background-repeat: no-repeat;   
+}
+.head-pluto{
+    background-image:url('https://coffeegravity.ru/wp-content/uploads/2019/08/%D0%9F%D0%BB%D1%83%D1%82%D0%BE%D0%BD-%D1%80%D0%B5%D0%B4.jpeg');
+    background-repeat: no-repeat;    
 }
 main{
     width: 100%;
@@ -107,6 +155,71 @@ a{
 .sun{
     color: yellow;
 }
+.mercury{
+    color:brown
+}
+.venus{
+    color: rgb(100, 96, 155);
+}
+.earth{
+    background: linear-gradient(to right, green, blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow:white 1px 0px 10px;
+}
+.mars{
+    background: linear-gradient(to right, tomato, brown);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.asteroid_col{
+    background: linear-gradient(to right, white, gray);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.ceres{
+    color: rgb(120, 119, 119);
+}
+.jupiter{
+    background: linear-gradient(to right, rgb(70, 14, 14), rgb(133, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+.saturn{
+    background: linear-gradient(to right, rgb(210, 169, 33), rgb(143, 121, 1));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+.uranus{
+    background: linear-gradient(to right, rgb(34, 211, 70), rgb(2, 108, 53));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.neptune{
+    background: linear-gradient(to right, rgb(34, 196, 211), rgb(3, 6, 157));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.outersolarsystem{
+    background: linear-gradient(to right, rgb(0, 26, 105), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow:gray 4px 0px 10px;
+}
+.pluto{
+    background: linear-gradient(to right, rgb(171, 172, 174), rgb(129, 179, 206));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 .img-sun{
     width: max-content;
 }
@@ -139,9 +252,13 @@ a{
         width: 300px;
         font-size: small;
     }
-    .img,.img-sun{
+    .img,.txt-img{
         width: 100px;
         height: 100px;
+    }
+    .img-sun{
+        width:fit-content;
+        height: fit-content;
     }
     header{
         width: fit-content;
@@ -152,4 +269,70 @@ a{
     .img:hover{
         transform: translateX(100px);
     }
+}
+.navbar{
+    position: absolute;
+    background: linear-gradient(to right, black, white);
+    border-bottom-right-radius: 25px;
+    left: -130px;
+    width: 150px;
+    transition-property: transform;
+    transition-duration: 1000ms;
+}
+.navbar h3{
+    background: linear-gradient(to right, gray, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.navbar:hover{
+    transform: translateX(130px);
+}
+.main-navbar{
+    position: relative;
+    display: inline-block;
+    padding-right: 10%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to right, black, gray);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-bottom-right-radius:20px;
+    border-top-right-radius:20px;
+  }
+.main-navbar:hover .dropdown-content {
+    display: block;
+}
+.navigation{
+    position: absolute;
+    margin-top: 20px;
+    width: 100%;
+}
+.num{
+    position: relative;
+    text-align: center;
+}
+.num-inside{
+    color: red;
+}
+.up{
+    display: none;
+    width: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none; 
+    outline: none;
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 90px; 
+    font-size: 18px; 
+}
+.up:hover{
+    border: 1px solid red;
 }

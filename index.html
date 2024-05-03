@@ -9,6 +9,42 @@
 </head>
 <body>
     <!--header start-->
+    <img src="https://cdn-icons-png.flaticon.com/512/156/156330.png" class="up" onclick="document.getElementById('navigator').scrollIntoView({behavior: 'smooth'});">
+    <div class="navigation" id="navigator">
+        <div class="main-navbar">
+            <h2>ПЛАНЕТЫ</h2>
+            <div class="dropdown-content">
+                <h3 class="sun" onclick="document.getElementById('sun').scrollIntoView({behavior: 'smooth'});">Солнце</h3>
+                <h3 class="mercury" onclick="document.getElementById('mercury').scrollIntoView({behavior: 'smooth'});">Меркурий</h3>
+                <h3 class="venus" onclick="document.getElementById('venus').scrollIntoView({behavior: 'smooth'});">Венера</h3>
+                <h3 class="earth" onclick="document.getElementById('earth').scrollIntoView({behavior: 'smooth'});">Земля</h3>
+                <h3 class="mars" onclick="document.getElementById('mars').scrollIntoView({behavior: 'smooth'});">Марс</h3>
+            </div>
+        </div>
+        <div class="main-navbar">
+            <h2>ПОЯС AСТЕРОИДОВ</h2>
+            <div class="dropdown-content">
+                <h3 class="asteroid_col" onclick="document.getElementById('asteroid').scrollIntoView({behavior: 'smooth'});">По́яс астеро́идов</h3>
+                <h3 class="ceres" onclick="document.getElementById('ceres').scrollIntoView({behavior: 'smooth'});">Цере́ра</h3>
+            </div>
+        </div>
+        <div class="main-navbar">
+            <h2>ГАЗОВЫЕ ГИГАНТЫ</h2>
+            <div class="dropdown-content">
+                <h3 class="jupiter" onclick="document.getElementById('jupiter').scrollIntoView({behavior: 'smooth'});">Юпитер</h3>
+                <h3 class="saturn" onclick="document.getElementById('saturn').scrollIntoView({behavior: 'smooth'});">Сатурн</h3>
+                <h3 class="uranus" onclick="document.getElementById('uranus').scrollIntoView({behavior: 'smooth'});">Уран</h3>
+                <h3 class="neptune" onclick="document.getElementById('neptune').scrollIntoView({behavior: 'smooth'});">Нептун</h3>
+            </div>
+        </div>
+        <div class="main-navbar">
+            <h2>ПОЯС КОЙПЕРА</h2>
+            <div class="dropdown-content">
+                <h3 class="outersolarsystem" onclick="document.getElementById('Outersolarsystem').scrollIntoView({behavior: 'smooth'});">Пояс Ко́йпера</h3>
+                <h3 class="pluto" onclick="document.getElementById('pluto').scrollIntoView({behavior: 'smooth'});">Плутон</h3>
+            </div>
+        </div>
+    </div>
     <header>
         <button class="btn">Сменить тему</button> 
         <h1 class="meme">КОСМОС</h1>
@@ -20,35 +56,35 @@
         <div class="about">
             <div class="row">
                 <h1>ПЛАНЕТЫ</h1>
-                <div class="planet" onclick="location.href='sun.html'">
+                <div class="planet" id='sun'onclick="location.href='sun.html'">
                     <h1>Солнце</h1>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg/280px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg" alt="The SUN" class="img">
                     <p>Солнце — ближайшая к Земле звезда. Средняя удалённость Солнца от Земли — 149,6 млн км.<br>
                         Считается, что Солнце сформировалось примерно 4,5 миллиарда лет назад<br>
                     </p>
                 </div>
-                <div class="planet">
+                <div class="planet" id='mercury'onclick="location.href='mercury.html'">
                     <h1>Меркурий</h1>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mercury_in_color_-_Prockter07_centered.jpg/420px-Mercury_in_color_-_Prockter07_centered.jpg" alt="The Mercury" class="img">
                     <p>Наименьшая планета Солнечной системы и самая близкая к Солнцу. Названа в честь древнеримского бога торговли — быстрого Меркурия, поскольку она движется по небу быстрее других планет.<br>
                         Среднее расстояние Меркурия от Солнца чуть меньше 58 млн км.<br>
                     </p>
                 </div>
-                <div class="planet">
+                <div class="planet" id='venus' onclick="location.href='venus.html'">
                     <h1>Венера</h1>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Venus_from_Mariner_10.jpg/420px-Venus_from_Mariner_10.jpg" alt="The Venerium" class="img">
                     <p>Вене́ра — вторая по удалённости от Солнца и шестая по размеру планета Солнечной системы, наряду с Меркурием.Названа в честь древнеримской богини любви Венеры.<br>
                         Среднее расстояние Венеры от Солнца — 108 млн км<br>
                     </p>
                 </div>
-                <div class="planet">
+                <div class="planet" id='earth' onclick="location.href='earth.html'">
                     <h1>Земля</h1>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Africa_and_Europe_from_a_Million_Miles_Away.png/405px-Africa_and_Europe_from_a_Million_Miles_Away.png" alt="The Earth" class="img">
+                    <img src="https://2.bp.blogspot.com/-0WWMSik2U-8/WReMlstpRNI/AAAAAAAAVEc/v5rYZCffakY8EGaDa3KN6W18CPXWEubggCLcB/s1600/earth-10%2B%25281%2529.gif" alt="The Earth" class="img">
                     <p>Земля́ — третья по удалённости от Солнца планета Солнечной системы. Самая плотная, пятая по диаметру и массе среди всех планет Солнечной системы и крупнейшая среди планет земной группы, в которую входят также Меркурий, Венера и Марс. Единственное известное человеку в настоящее время тело во Вселенной, населённое живыми организмами.<br>
                         Научные данные указывают на то, что Земля образовалась из солнечной туманности около 4,54 миллиарда лет назад<br>
                     </p>
                 </div>
-                <div class="planet">
+                <div class="planet" id='mars' onclick="location.href='mars.html'">
                     <h1>Марс</h1>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mars_Valles_Marineris_EDIT.jpg/411px-Mars_Valles_Marineris_EDIT.jpg" alt="The mars" class="img">
                     <p>Марс — четвёртая по удалённости от Солнца и седьмая по размеру планета Солнечной системы; масса планеты составляет 10,7 % массы Земли.Названа в честь Марса — древнеримского бога войны, соответствующего древнегреческому Аресу.Также Марс называют красной планетой<br>
@@ -56,14 +92,14 @@
                     </p>
                 </div>
                 <h1>ПОЯС AСТЕРОИДОВ</h1>
-                <div class="planet asteroid">
+                <div class="planet asteroid" id='asteroid' onclick="location.href='asteroid.html'">
                     <h1>По́яс астеро́идов</h1>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/InnerSolarSystem_ru.png/450px-InnerSolarSystem_ru.png" alt="The asteroid" class="img">
                     <p>По́яс астеро́идов — область Солнечной системы, расположенная между орбитами Марса и Юпитера, являющаяся местом скопления множества объектов всевозможных размеров, преимущественно неправильной формы, называемых астероидами или малыми планетами.<br>
                         Крупнейшими объектами пояса астероидов являются Церера, Веста,Паллада и Гигея. Хотя они имеют много общих характеристик, только одна из них — Церера — оказалась достаточно круглой для присвоения статуса карликовой планеты<br>
                     </p>
                 </div>
-                <div class="planet">
+                <div class="planet" id='ceres' onclick="location.href='ceres.html'">
                     <h1>Цере́ра</h1>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ceresintruecolor.png/450px-Ceresintruecolor.png" alt="The Ceres" class="img">
                     <p>Наименьшая среди известных карликовых планет Солнечной системы. Расположена в поясе астероидов. Церера была открыта в 1801 году итальянским астрономом Джузеппе Пьяцци в Палермской астрономической обсерватории. Названа в честь древнеримской богини плодородия Цереры.<br>
@@ -71,7 +107,7 @@
                     </p>
                 </div>
                 <h1>ГАЗОВЫЕ ГИГАНТЫ</h1>
-                <div class="planet">
+                <div class="planet" id='jupiter' onclick="location.href='jupiter.html'">
                     <h1>Юпитер</h1>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Jupiter%2C_image_taken_by_NASA%27s_Hubble_Space_Telescope%2C_June_2019_-_Edited.jpg/450px-Jupiter%2C_image_taken_by_NASA%27s_Hubble_Space_Telescope%2C_June_2019_-_Edited.jpg" alt="The Jupiter" class="img">
                     <p>Юпи́тер — крупнейшая планета Солнечной системы, пятая по удалённости от Солнца. Наряду с Сатурном Юпитер классифицируется как газовый гигант.<br>
@@ -79,7 +115,7 @@
                         Юпитер имеет, по крайней мере, 95 спутников
                     </p>
                 </div>
-                <div class="planet">
+                <div class="planet" id='saturn' onclick="location.href='saturn.html'">
                     <h1>Сату́рн</h1>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Saturn_-_April_25_2016_%2837612580000%29.png/450px-Saturn_-_April_25_2016_%2837612580000%29.png" alt="The Saturn" class="img">
                     <p>Сату́рн — шестая планета по удалённости от Солнца и вторая по размерам планета в Солнечной системе после Юпитера. Сатурн классифицируется как газовая планета-гигант. Сатурн назван в честь римского бога земледелия.<br>
@@ -87,14 +123,14 @@
                         Среднее расстояние между Сатурном и Солнцем составляет 1430 млн км
                     </p>
                 </div>
-                <div class="planet">
+                <div class="planet" id='uranus' onclick="location.href='uranus.html'">
                     <h1>Ура́н</h1>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Uranus_Voyager2_color_calibrated.png/411px-Uranus_Voyager2_color_calibrated.png" alt="The Uranus" class="img">
                     <p>Ура́н — планета Солнечной системы, седьмая по удалённости от Солнца, третья по диаметру и четвёртая по массе. Была открыта в 1781 году английским астрономом Уильямом Гершелем и названа в честь греческого бога неба Урана.<br>
                         Уран — наименее массивная из планет-гигантов Солнечной системы, он тяжелее Земли в 14,5 раза, превосходя её по размерам примерно в 4 раза<br>
                     </p>
                 </div>
-                <div class="planet">
+                <div class="planet" id='neptune' onclick="location.href='neptune.html'">
                     <h1>Непту́н</h1>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Neptune_Voyager2_color_calibrated.png/360px-Neptune_Voyager2_color_calibrated.png" alt="The Neptune" class="img">
                     <p>Непту́н — восьмая и самая дальняя от Солнца планета Солнечной системы. Его масса превышает массу Земли в 17,2 раза и является третьей среди планет Солнечной системы,Планета названа в честь Нептуна — римского бога морей<br>
@@ -102,7 +138,7 @@
                     </p>
                 </div>
                 <h1>ПОЯС КОЙПЕРА</h1>
-                <div class="planet asteroid">
+                <div class="planet asteroid" id='Outersolarsystem' onclick="location.href='outersolarsystem.html'">
                     <h1>Пояс Ко́йпера</h1>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Outersolarsystem_objectpositions_labels_comp-ru.png/375px-Outersolarsystem_objectpositions_labels_comp-ru.png" alt="The Outersolarsystem" class="img">
                     <p>Пояс Ко́йпера — область Солнечной системы от орбиты Нептуна (30 а. е. от Солнца) до расстояния около 55 а. е. от Солнца[1]. Хотя пояс Койпера похож на пояс астероидов, он примерно в 20 раз шире и в 20—200 раз массивнее последнего. 
@@ -110,7 +146,7 @@
                         Плутон — крупнейший известный объект пояса Койпера. Первоначально он считался планетой, но был переклассифицирован как карликовая планета.<br>
                     </p>
                 </div>
-                <div class="planet">
+                <div class="planet" id='pluto' onclick="location.href='pluto.html'">
                     <h1>Плуто́н </h1>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pluto_in_True_Color_-_High-Res.jpg/450px-Pluto_in_True_Color_-_High-Res.jpg" alt="The Pluto" class="img">
                     <p>Плуто́н  — крупнейшая известная карликовая планета Солнечной системы<br>

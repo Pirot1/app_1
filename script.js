@@ -3,8 +3,8 @@ let button = document.querySelector('.btn')
 let head = document.querySelector('header')
 let main = document.querySelector('main')
 let meme = document.querySelector('.meme')
-let planets = document.querySelectorAll('.planet')
-let imgs = document.querySelectorAll('.img')
+let up = document.querySelector('.up')
+
 /*functions*/
 head.style.backgroundImage == 'url("https://images01.nicepage.io/a1389d7bc73adea1e1c1fb7e/335bc12dcce55b76af124ec3/59f86e9a43e6f89908a4f0b948915bef.png")'
 button.addEventListener('click',function(){
@@ -25,3 +25,12 @@ meme.addEventListener('dblclick',function(){
     head.style.color = 'black'
 })
 
+
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      up.style.display = "block";
+    } else {
+      up.style.display = "none";
+    }
+  }
